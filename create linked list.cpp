@@ -6,8 +6,9 @@ class node
 public:
 	int data;
 	node *next;
-    node*start=NULL;
-  void create(int k)
+    node*start=NULL;   //declaring the start pointer as NULL as it not pointing anywhere currently
+
+  void create(int k)   //function begins for creation of linked list
   {
 	node *ptr,*ptr1;
 	
@@ -26,13 +27,10 @@ public:
 	   }
 	   ptr1->next=ptr;
 	   		   
-	   }
-	   
+	   } 
   }
-	
-
 }
- void display()
+ void display()            //function begins for display of linked list
  {
 	 node *temp=start;
 	 while(temp!=NULL)
@@ -41,7 +39,10 @@ public:
 		 temp=temp->next;
 	 }
  }
-};
+
+
+
+ };
 int main()
 {
 	node N;
@@ -49,7 +50,7 @@ int main()
 	cout<<"enter the number of elements";
 	cin>>n;
 	N.create(n);
-
 	N.display();
-  
+	
 }
+
