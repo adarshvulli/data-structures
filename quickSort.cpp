@@ -56,6 +56,6 @@ int main()
 	quick_sort(arr, x, y);
 	cout<<endl;
 	for(int i=0; i<n; i++)
-		cout<<arr[i];
+		cout<<arr[i]<<" ";
 	cout<<endl;
 }
