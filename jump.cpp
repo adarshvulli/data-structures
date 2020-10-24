@@ -41,7 +41,15 @@ int jumpSearch(int arr[], int x, int n)
 int main() 
 { 
     int arr[] = { 0, 1, 1, 2, 3, 5, 8, 9, 21 }; 
-    int x = 9; 
+    cout<<"Array:\n";
+    for(int i=0;i<9;i++)
+    {
+        cout<<arr[i]<<"\t";
+    }
+    cout<<"\n";
+    int x;
+    cout<<"Enter the element to search:";
+    cin>>x;
     int n = sizeof(arr) / sizeof(arr[0]); 
       
     // Find the index of 'x' using Jump Search 
